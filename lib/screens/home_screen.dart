@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:game_of_sulif/models/choice.dart';
-import 'package:game_of_sulif/screens/result_screen.dart';
+import '../models/choice.dart';
+import 'result_screen.dart';
 import '../widgets/choice_button.dart';
+import '../models/game_stats.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+  final GameStats gameStats;
+
+  const HomeScreen({super.key, required this.gameStats});
 
   void _onChoiceSelected(BuildContext context, Choice playerChoice) {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => ResultScreen(playerChoice: playerChoice),
+        builder:
+            (context) =>
+                ResultScreen(playerChoice: playerChoice, gameStats: gameStats),
       ),
     );
   }
@@ -18,7 +23,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Камень-Ножницы-Бумага')),
+      appBar: AppBar(title: Text('Камень-Ножницы-Бумага')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

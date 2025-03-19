@@ -3,7 +3,6 @@ class Choice {
   final String imagePath;
 
   Choice({required this.name, required this.imagePath});
-
 }
 
 final List<Choice> choices = [
