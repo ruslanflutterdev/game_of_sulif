@@ -1,16 +1,39 @@
-# game_of_sulif
+# Игра "Сулифа" на Flutter
 
-A new Flutter project.
+Простая игра "Сулифа" (камень-ножницы-бумага) для двух игроков. Реализована на языке Dart с использованием Flutter.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Описание:
 
-A few resources to get you started if this is your first Flutter project:
+Игра позволяет двум пользователям по очереди выбрать один из трёх жестов:
+- Камень
+- Ножницы
+- Бумага
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+После выбора — определяется победитель по классическим правилам:
+- Камень побеждает ножницы
+- Ножницы побеждают бумагу
+- Бумага побеждает камень
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Функции:
+- Выбор жеста каждым игроком
+- Отображение результатов
+- Подсчёт очков (если реализовано)
+- Кнопка перезапуска
+
+---
+
+## Технологии:
+- Flutter
+- Dart
+- State Management через setState
+
+---
+
+## Как запустить проект:
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/tyutunnikov-flutter/sulifa-game.git
