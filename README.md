@@ -36,4 +36,4 @@
 ## Как запустить проект:
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/tyutunnikov-flutter/sulifa-game.git
+   git clone https://github.com/ruslanflutterdev/game_of_sulif.git
